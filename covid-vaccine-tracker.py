@@ -7,7 +7,7 @@ url = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPi
 pin =str(input("Enter the pin: "))
 print("\n")
 
-for i in range(1,8):
+for i in range(1,3):
     date_check = datetime.date.today() 
     date_check = date_check + (datetime.timedelta(days=i)) 
     date_check = str(date_check)
@@ -37,4 +37,4 @@ for i in range(1,8):
                             print(key_data+' : ',value_data)
                 print("\n")
         else:
-            print("No vaccine available on the specified date!")
+            print("No vaccine available, please check later.")
